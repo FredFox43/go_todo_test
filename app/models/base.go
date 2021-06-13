@@ -5,10 +5,10 @@ import (
 	"database/sql"
 	"fmt"
 	"log"
+	"os"
 	"todo_app_heroku/config"
 
 	"github.com/google/uuid"
-	"github.com/lib/pq"
 )
 
 var Db *sql.DB
