@@ -1,0 +1,1050 @@
+2021/06/09 13:21:09 main.go:15: test
+2021/06/10 01:47:43 users.go:58: near "shere": syntax error
+2021/06/10 20:35:45 todos.go:53: sql: expected 3 destination arguments in Scan, not 4
+2021/06/10 22:43:02 server.go:3095: http: panic serving 127.0.0.1:63899: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000067040)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc000110080)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc00021a000, 0x1130180, 0x120f370, 0xc00019bb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc00021a000, 0xc0001a2000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc00021a000, 0xc0001a2000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc00021a000, 0xc0001a2000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc00021a000, 0xc0001a2000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067040, 0x121c4e0, 0xc000184000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:02 server.go:3095: http: panic serving 127.0.0.1:60404: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0000670e0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc000110160)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc000174000, 0x1130180, 0x120f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc000174000, 0xc000114000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc000174000, 0xc000114000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc000174000, 0xc000114000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc000174000, 0xc000114000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000670e0, 0x121c4e0, 0xc00010e000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:02 server.go:3095: http: panic serving 127.0.0.1:65442: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc0001aa000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc000110240)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc0001740e0, 0x1130180, 0x120f370, 0xc000223b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc0001740e0, 0xc000114600)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc0001740e0, 0xc000114600)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc0001740e0, 0xc000114600)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc0001740e0, 0xc000114600)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001aa000, 0x121c4e0, 0xc00010e280)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:03 server.go:3095: http: panic serving 127.0.0.1:57507: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc00017a000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc000216100)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc00021a1c0, 0x1130180, 0x120f370, 0xc000223b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc00021a1c0, 0xc000232000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc00021a1c0, 0xc000232000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc00021a1c0, 0xc000232000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc00021a1c0, 0xc000232000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00017a000, 0x121c4e0, 0xc0002120c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:03 server.go:3095: http: panic serving 127.0.0.1:56151: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 19 [running]:
+net/http.(*conn).serve.func1(0xc000238000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc00004aeb0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc0001742a0, 0x1130180, 0x120f370, 0xc000229b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc0001742a0, 0xc000114900)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc0001742a0, 0xc000114900)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc0001742a0, 0xc000114900)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc0001742a0, 0xc000114900)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000238000, 0x121c4e0, 0xc00010e400)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:03 server.go:3095: http: panic serving 127.0.0.1:60749: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc000067180)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc00004af80)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc0000ce1c0, 0x1130180, 0x120f370, 0xc0002a5b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc0000ce1c0, 0xc000232400)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc0000ce1c0, 0xc000232400)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc0000ce1c0, 0xc000232400)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc0000ce1c0, 0xc000232400)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067180, 0x121c4e0, 0xc000212240)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:04 server.go:3095: http: panic serving 127.0.0.1:64775: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 22 [running]:
+net/http.(*conn).serve.func1(0xc0002380a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc00004afe0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc00021a380, 0x1130180, 0x120f370, 0xc000223b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc00021a380, 0xc0000c4300)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc00021a380, 0xc0000c4300)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc00021a380, 0xc0000c4300)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc00021a380, 0xc0000c4300)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0002380a0, 0x121c4e0, 0xc000054680)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:04 server.go:3095: http: panic serving 127.0.0.1:53606: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 12 [running]:
+net/http.(*conn).serve.func1(0xc000067220)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc000216270)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc00021a540, 0x1130180, 0x120f370, 0xc0002a5b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc00021a540, 0xc000232500)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc00021a540, 0xc000232500)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc00021a540, 0xc000232500)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc00021a540, 0xc000232500)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067220, 0x121c4e0, 0xc0002122c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:04 server.go:3095: http: panic serving 127.0.0.1:52811: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 13 [running]:
+net/http.(*conn).serve.func1(0xc0000672c0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc00004b0b0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc0000ce380, 0x1130180, 0x120f370, 0xc0002a7b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc0000ce380, 0xc0000c4400)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc0000ce380, 0xc0000c4400)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc0000ce380, 0xc0000c4400)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc0000ce380, 0xc0000c4400)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000672c0, 0x121c4e0, 0xc000054700)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:09 server.go:3095: http: panic serving 127.0.0.1:51018: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 42 [running]:
+net/http.(*conn).serve.func1(0xc00017a0a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc000110330)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc0000ce460, 0x1130180, 0x120f370, 0xc000229b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc0000ce460, 0xc0000c4700)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc0000ce460, 0xc0000c4700)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc0000ce460, 0xc0000c4700)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc0000ce460, 0xc0000c4700)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00017a0a0, 0x121c4e0, 0xc0000548c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:09 server.go:3095: http: panic serving 127.0.0.1:50287: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 43 [running]:
+net/http.(*conn).serve.func1(0xc00017a140)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc000216360)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc00021a620, 0x1130180, 0x120f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc00021a620, 0xc0000c4800)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc00021a620, 0xc0000c4800)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc00021a620, 0xc0000c4800)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc00021a620, 0xc0000c4800)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00017a140, 0x121c4e0, 0xc000054940)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:09 server.go:3095: http: panic serving 127.0.0.1:52216: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 67 [running]:
+net/http.(*conn).serve.func1(0xc000067360)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1141f40, 0xc00004b200)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x121bda0, 0xc0000ce540, 0x1130180, 0x120f370, 0xc000223b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x121bda0, 0xc0000ce540, 0xc000232c00)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x11c1080, 0x121bda0, 0xc0000ce540, 0xc000232c00)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x13f4340, 0x121bda0, 0xc0000ce540, 0xc000232c00)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc0000ce000, 0x121bda0, 0xc0000ce540, 0xc000232c00)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067360, 0x121c4e0, 0xc000212640)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:24 server.go:3095: http: panic serving 127.0.0.1:51604: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000066fa0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x5a1f40, 0xc00004af30)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x67bda0, 0xc00014e1c0, 0x590180, 0x66f370, 0xc0000a3b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x67bda0, 0xc00014e1c0, 0xc0000aa000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x621080, 0x67bda0, 0xc00014e1c0, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x854340, 0x67bda0, 0xc00014e1c0, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x67bda0, 0xc00014e1c0, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000066fa0, 0x67c4e0, 0xc00008e000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:24 server.go:3095: http: panic serving 127.0.0.1:53297: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000067040)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x5a1f40, 0xc0002180b0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x67bda0, 0xc0002040e0, 0x590180, 0x66f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x67bda0, 0xc0002040e0, 0xc0000aa100)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x621080, 0x67bda0, 0xc0002040e0, 0xc0000aa100)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x854340, 0x67bda0, 0xc0002040e0, 0xc0000aa100)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x67bda0, 0xc0002040e0, 0xc0000aa100)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067040, 0x67c4e0, 0xc00008e0c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:43:24 server.go:3095: http: panic serving 127.0.0.1:59721: template: layout.html:13: unexpected bad character U+0022 '"' in command
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0xc0000670e0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x5a1f40, 0xc0000900f0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x67bda0, 0xc0000b40e0, 0x590180, 0x66f370, 0xc00015bb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x67bda0, 0xc0000b40e0, 0xc0000aa200)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x621080, 0x67bda0, 0xc0000b40e0, 0xc0000aa200)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x854340, 0x67bda0, 0xc0000b40e0, 0xc0000aa200)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x67bda0, 0xc0000b40e0, 0xc0000aa200)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000670e0, 0x67c4e0, 0xc00008e180)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:38 server.go:3095: http: panic serving 127.0.0.1:60242: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc0000670e0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc0001860c0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a0000, 0x1430180, 0x150f370, 0xc0000a3b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a0000, 0xc0000aa000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a0000, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a0000, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a0000, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000670e0, 0x151c4e0, 0xc00008e000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:38 server.go:3095: http: panic serving 127.0.0.1:53630: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc000067180)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000090050)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a00e0, 0x1430180, 0x150f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a00e0, 0xc00018c000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a00e0, 0xc00018c000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a00e0, 0xc00018c000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a00e0, 0xc00018c000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067180, 0x151c4e0, 0xc000184000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:38 server.go:3095: http: panic serving 127.0.0.1:62136: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 9 [running]:
+net/http.(*conn).serve.func1(0xc000067220)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc00004aeb0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a01c0, 0x1430180, 0x150f370, 0xc0001afb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a01c0, 0xc00018c600)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a01c0, 0xc00018c600)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a01c0, 0xc00018c600)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a01c0, 0xc00018c600)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067220, 0x151c4e0, 0xc000184340)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:39 server.go:3095: http: panic serving 127.0.0.1:57396: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 10 [running]:
+net/http.(*conn).serve.func1(0xc0000672c0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc0000900a0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a0380, 0x1430180, 0x150f370, 0xc000171b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a0380, 0xc00018c900)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a0380, 0xc00018c900)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a0380, 0xc00018c900)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a0380, 0xc00018c900)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000672c0, 0x151c4e0, 0xc0001844c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:39 server.go:3095: http: panic serving 127.0.0.1:53264: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 24 [running]:
+net/http.(*conn).serve.func1(0xc000200000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000090110)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a0540, 0x1430180, 0x150f370, 0xc0001afb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a0540, 0xc000144100)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a0540, 0xc000144100)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a0540, 0xc000144100)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a0540, 0xc000144100)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000200000, 0x151c4e0, 0xc000054580)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:39 server.go:3095: http: panic serving 127.0.0.1:60259: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000280000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc0000901e0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0002860e0, 0x1430180, 0x150f370, 0xc00004db38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0002860e0, 0xc000144300)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0002860e0, 0xc000144300)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0002860e0, 0xc000144300)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0002860e0, 0xc000144300)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000280000, 0x151c4e0, 0xc000054600)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:40 server.go:3095: http: panic serving 127.0.0.1:52944: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0xc000067360)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000186390)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a0700, 0x1430180, 0x150f370, 0xc000173b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a0700, 0xc00018cd00)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a0700, 0xc00018cd00)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a0700, 0xc00018cd00)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a0700, 0xc00018cd00)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067360, 0x151c4e0, 0xc000184780)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:40 server.go:3095: http: panic serving 127.0.0.1:64775: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc0002000a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000090250)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc00014e1c0, 0x1430180, 0x150f370, 0xc0001afb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc00014e1c0, 0xc000144400)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc00014e1c0, 0xc000144400)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc00014e1c0, 0xc000144400)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc00014e1c0, 0xc000144400)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0002000a0, 0x151c4e0, 0xc000054680)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:40 server.go:3095: http: panic serving 127.0.0.1:59406: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 14 [running]:
+net/http.(*conn).serve.func1(0xc000067400)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000186400)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc00014e380, 0x1430180, 0x150f370, 0xc000215b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc00014e380, 0xc00018cf00)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc00014e380, 0xc00018cf00)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc00014e380, 0xc00018cf00)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc00014e380, 0xc00018cf00)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067400, 0x151c4e0, 0xc000184900)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:50 server.go:3095: http: panic serving 127.0.0.1:49921: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc0000674a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc0001864e0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a07e0, 0x1430180, 0x150f370, 0xc000215b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a07e0, 0xc00018d000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a07e0, 0xc00018d000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a07e0, 0xc00018d000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a07e0, 0xc00018d000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000674a0, 0x151c4e0, 0xc000184980)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:51 server.go:3095: http: panic serving 127.0.0.1:63436: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 37 [running]:
+net/http.(*conn).serve.func1(0xc0002800a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc00004b030)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0001a09a0, 0x1430180, 0x150f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0001a09a0, 0xc000144900)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0001a09a0, 0xc000144900)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0001a09a0, 0xc000144900)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0001a09a0, 0xc000144900)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0002800a0, 0x151c4e0, 0xc000054900)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:51 server.go:3095: http: panic serving 127.0.0.1:63979: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 82 [running]:
+net/http.(*conn).serve.func1(0xc000310000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000328050)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc00014e540, 0x1430180, 0x150f370, 0xc000319b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc00014e540, 0xc00018d500)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc00014e540, 0xc00018d500)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc00014e540, 0xc00018d500)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc00014e540, 0xc00018d500)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000310000, 0x151c4e0, 0xc000184c00)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:51 server.go:3095: http: panic serving 127.0.0.1:59696: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 53 [running]:
+net/http.(*conn).serve.func1(0xc000067540)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000328130)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc00035c0e0, 0x1430180, 0x150f370, 0xc000317b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc00035c0e0, 0xc000326100)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc00035c0e0, 0xc000326100)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc00035c0e0, 0xc000326100)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc00035c0e0, 0xc000326100)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067540, 0x151c4e0, 0xc000358000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:45:56 server.go:3095: http: panic serving 127.0.0.1:52243: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 38 [running]:
+net/http.(*conn).serve.func1(0xc000280140)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x1441f40, 0xc000090330)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x151bda0, 0xc0002862a0, 0x1430180, 0x150f370, 0xc0001afb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0x151bda0, 0xc0002862a0, 0xc000144b00)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0x14c1080, 0x151bda0, 0xc0002862a0, 0xc000144b00)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x16f4340, 0x151bda0, 0xc0002862a0, 0xc000144b00)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x151bda0, 0xc0002862a0, 0xc000144b00)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000280140, 0x151c4e0, 0xc000054a80)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:51:17 server.go:3095: http: panic serving 127.0.0.1:57101: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc00009cfa0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xcc1f40, 0xc0001860d0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xd9bda0, 0xc0001a60e0, 0xcb0180, 0xd8f370, 0xc00019bb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0xd9bda0, 0xc0001a60e0, 0xc0001a2000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0xd41080, 0xd9bda0, 0xc0001a60e0, 0xc0001a2000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf74340, 0xd9bda0, 0xc0001a60e0, 0xc0001a2000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00011a000, 0xd9bda0, 0xc0001a60e0, 0xc0001a2000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00009cfa0, 0xd9c4e0, 0xc000184000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:51:18 server.go:3095: http: panic serving 127.0.0.1:61889: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 5 [running]:
+net/http.(*conn).serve.func1(0xc00005c000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xcc1f40, 0xc000186190)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xd9bda0, 0xc0001a62a0, 0xcb0180, 0xd8f370, 0xc000053b38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0xd9bda0, 0xc0001a62a0, 0xc00010e100)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0xd41080, 0xd9bda0, 0xc0001a62a0, 0xc00010e100)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf74340, 0xd9bda0, 0xc0001a62a0, 0xc00010e100)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00011a000, 0xd9bda0, 0xc0001a62a0, 0xc00010e100)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005c000, 0xd9c4e0, 0xc0000e6540)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:51:18 server.go:3095: http: panic serving 127.0.0.1:50004: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 6 [running]:
+net/http.(*conn).serve.func1(0xc00005c0a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xcc1f40, 0xc00004a080)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xd9bda0, 0xc0001a6460, 0xcb0180, 0xd8f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0xd9bda0, 0xc0001a6460, 0xc00010e200)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0xd41080, 0xd9bda0, 0xc0001a6460, 0xc00010e200)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf74340, 0xd9bda0, 0xc0001a6460, 0xc00010e200)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00011a000, 0xd9bda0, 0xc0001a6460, 0xc00010e200)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00005c0a0, 0xd9c4e0, 0xc0000e6600)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:51:18 server.go:3095: http: panic serving 127.0.0.1:60567: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 40 [running]:
+net/http.(*conn).serve.func1(0xc0001fc000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xcc1f40, 0xc000284030)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xd9bda0, 0xc00011a1c0, 0xcb0180, 0xd8f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0xd9bda0, 0xc00011a1c0, 0xc00010e300)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0xd41080, 0xd9bda0, 0xc00011a1c0, 0xc00010e300)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf74340, 0xd9bda0, 0xc00011a1c0, 0xc00010e300)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00011a000, 0xd9bda0, 0xc00011a1c0, 0xc00010e300)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001fc000, 0xd9c4e0, 0xc0000e66c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/10 22:51:23 server.go:3095: http: panic serving 127.0.0.1:59313: template: layout.html:12: unexpected bad character U+0022 '"' in command
+goroutine 23 [running]:
+net/http.(*conn).serve.func1(0xc00009d040)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xcc1f40, 0xc0002840f0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xd9bda0, 0xc0002b80e0, 0xcb0180, 0xd8f370, 0xc00004fb38, 0x2, 0x2)
+	C:/Go/src/todo_app/app/controllers/server.go:16 +0x2be
+std/todo_app/app/controllers.top(0xd9bda0, 0xc0002b80e0, 0xc0002b4000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:16 +0xab
+net/http.HandlerFunc.ServeHTTP(0xd41080, 0xd9bda0, 0xc0002b80e0, 0xc0002b4000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xf74340, 0xd9bda0, 0xc0002b80e0, 0xc0002b4000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00011a000, 0xd9bda0, 0xc0002b80e0, 0xc0002b4000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00009d040, 0xd9c4e0, 0xc0002b2000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/11 00:14:46 users.go:103: table sessions has no column named user_id
+2021/06/11 00:19:45 users.go:103: table sessions has no column named user_id
+2021/06/11 00:19:45 main.go:20: no such column: user_id
+2021/06/11 00:21:53 users.go:103: table sessions has no column named user_id
+2021/06/11 00:21:53 main.go:20: no such column: user_id
+2021/06/11 00:27:37 users.go:104: table sessions has no column named user_id
+2021/06/11 00:27:37 main.go:20: no such column: user_id
+2021/06/11 00:33:41 users.go:104: table sessions has no column named user_id
+2021/06/11 00:33:41 main.go:20: no such column: user_id
+2021/06/11 21:07:53 route_main.go:32: near "From": syntax error
+2021/06/11 21:07:53 route_main.go:32: near "From": syntax error
+2021/06/12 11:03:30 route_main.go:32: near "FROM": syntax error
+2021/06/12 11:03:30 route_main.go:32: near "FROM": syntax error
+2021/06/12 11:50:59 server.go:3095: http: panic serving 127.0.0.1:64348: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000066fa0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x128c840, 0xc00007b680)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x1354f60, 0xc0000bc000, 0x0, 0x0, 0xc00019bb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0x1354f60, 0xc0000bc000, 0xc0000a4100)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0x12f9660, 0x1354f60, 0xc0000bc000, 0xc0000a4100)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x1531360, 0x1354f60, 0xc0000bc000, 0xc0000a4100)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x1354f60, 0xc0000bc000, 0xc0000a4100)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000066fa0, 0x13556a0, 0xc000184000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:50:59 server.go:3095: http: panic serving 127.0.0.1:53561: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000092000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x128c840, 0xc00007b740)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x1354f60, 0xc0000bc0e0, 0x0, 0x0, 0xc00019bb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0x1354f60, 0xc0000bc0e0, 0xc000144100)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0x12f9660, 0x1354f60, 0xc0000bc0e0, 0xc000144100)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x1531360, 0x1354f60, 0xc0000bc0e0, 0xc000144100)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x1354f60, 0xc0000bc0e0, 0xc000144100)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000092000, 0x13556a0, 0xc000054580)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:50:59 server.go:3095: http: panic serving 127.0.0.1:58354: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0001ee000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x128c840, 0xc0001837a0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x1354f60, 0xc0001ba2a0, 0x0, 0x0, 0xc000197b28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0x1354f60, 0xc0001ba2a0, 0xc000144500)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0x12f9660, 0x1354f60, 0xc0001ba2a0, 0xc000144500)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x1531360, 0x1354f60, 0xc0001ba2a0, 0xc000144500)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x1354f60, 0xc0001ba2a0, 0xc000144500)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001ee000, 0x13556a0, 0xc000054900)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:51:00 server.go:3095: http: panic serving 127.0.0.1:55367: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc0001ee0a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0x128c840, 0xc000183860)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0x1354f60, 0xc0000bc1c0, 0x0, 0x0, 0xc000197b28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0x1354f60, 0xc0000bc1c0, 0xc0000a4600)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0x12f9660, 0x1354f60, 0xc0000bc1c0, 0xc0000a4600)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x1531360, 0x1354f60, 0xc0000bc1c0, 0xc0000a4600)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0x1354f60, 0xc0000bc1c0, 0xc0000a4600)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001ee0a0, 0x13556a0, 0xc0000b8280)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:04 server.go:3095: http: panic serving 127.0.0.1:53185: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc000067040)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00008c420)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc0000be000, 0x0, 0x0, 0xc0000a3b28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc0000be000, 0xc0000aa000)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc0000be000, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc0000be000, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc0000be000, 0xc0000aa000)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067040, 0xb156a0, 0xc00008e000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:06 server.go:3095: http: panic serving 127.0.0.1:54993: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 34 [running]:
+net/http.(*conn).serve.func1(0xc000188000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00008c990)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc0000be1c0, 0x0, 0x0, 0xc0000a3b28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc0000be1c0, 0xc0000aa700)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc0000be1c0, 0xc0000aa700)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc0000be1c0, 0xc0000aa700)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc0000be1c0, 0xc0000aa700)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000188000, 0xb156a0, 0xc000054580)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:06 server.go:3095: http: panic serving 127.0.0.1:52934: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 8 [running]:
+net/http.(*conn).serve.func1(0xc0000670e0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00008cd50)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc0000be2a0, 0x0, 0x0, 0xc00009fb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc0000be2a0, 0xc0000aa500)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc0000be2a0, 0xc0000aa500)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc0000be2a0, 0xc0000aa500)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc0000be2a0, 0xc0000aa500)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000670e0, 0xb156a0, 0xc00008e380)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:06 server.go:3095: http: panic serving 127.0.0.1:62586: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 50 [running]:
+net/http.(*conn).serve.func1(0xc00028c000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00008d1a0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc0000be380, 0x0, 0x0, 0xc00009fb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc0000be380, 0xc0000aac00)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc0000be380, 0xc0000aac00)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc0000be380, 0xc0000aac00)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc0000be380, 0xc0000aac00)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00028c000, 0xb156a0, 0xc00008e8c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:07 server.go:3095: http: panic serving 127.0.0.1:62451: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc00028c0a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00007be90)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc0000be460, 0x0, 0x0, 0xc00009fb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc0000be460, 0xc0000aaf00)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc0000be460, 0xc0000aaf00)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc0000be460, 0xc0000aaf00)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc0000be460, 0xc0000aaf00)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00028c0a0, 0xb156a0, 0xc00008eb80)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:14 server.go:3095: http: panic serving 127.0.0.1:62228: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 29 [running]:
+net/http.(*conn).serve.func1(0xc000260000)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00017e990)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc0002ac460, 0x0, 0x0, 0xc00009fb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc0002ac460, 0xc000145500)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc0002ac460, 0xc000145500)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc0002ac460, 0xc000145500)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc0002ac460, 0xc000145500)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000260000, 0xb156a0, 0xc000290000)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:14 server.go:3095: http: panic serving 127.0.0.1:63314: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 30 [running]:
+net/http.(*conn).serve.func1(0xc0002600a0)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00017ed80)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc00014e2a0, 0x0, 0x0, 0xc00009fb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc00014e2a0, 0xc000294100)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc00014e2a0, 0xc000294100)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc00014e2a0, 0xc000294100)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc00014e2a0, 0xc000294100)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0002600a0, 0xb156a0, 0xc000290080)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:14 server.go:3095: http: panic serving 127.0.0.1:51482: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 86 [running]:
+net/http.(*conn).serve.func1(0xc000067180)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc00017f1a0)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc00014e380, 0x0, 0x0, 0xc00009fb28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc00014e380, 0xc00027c200)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc00014e380, 0xc00027c200)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc00014e380, 0xc00027c200)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc00014e380, 0xc00027c200)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067180, 0xb156a0, 0xc00008f3c0)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
+2021/06/12 11:54:15 server.go:3095: http: panic serving 127.0.0.1:51676: open app/views/templates/private_nabvar.html: The system cannot find the file specified.
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0xc000067220)
+	C:/Go/src/net/http/server.go:1801 +0x147
+panic(0xa4c840, 0xc000274720)
+	C:/Go/src/runtime/panic.go:975 +0x499
+text/template.Must(...)
+	C:/Go/src/text/template/helper.go:23
+std/todo_app/app/controllers.generateHTML(0xb14f60, 0xc0002ac540, 0x0, 0x0, 0xc0002e9b28, 0x3, 0x3)
+	C:/Go/src/todo_app/app/controllers/server.go:17 +0x2be
+std/todo_app/app/controllers.todoNew(0xb14f60, 0xc0002ac540, 0xc000295600)
+	C:/Go/src/todo_app/app/controllers/route_main.go:47 +0x168
+net/http.HandlerFunc.ServeHTTP(0xab9660, 0xb14f60, 0xc0002ac540, 0xc000295600)
+	C:/Go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0xcf1360, 0xb14f60, 0xc0002ac540, 0xc000295600)
+	C:/Go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc00014e000, 0xb14f60, 0xc0002ac540, 0xc000295600)
+	C:/Go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc000067220, 0xb156a0, 0xc000290d80)
+	C:/Go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	C:/Go/src/net/http/server.go:2969 +0x36d
