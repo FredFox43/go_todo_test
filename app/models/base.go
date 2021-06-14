@@ -9,6 +9,7 @@ import (
 	"todo_app_heroku/config"
 
 	"github.com/google/uuid"
+	"github.com/lib/pq"
 )
 
 var Db *sql.DB
@@ -26,7 +27,7 @@ const (
 func init() {
 
 	url := os.Getenv("DATABASE_URL")
-	connection, _ := pq.parseURL(url)
+	connection, _ := pq.ParseURL(url)
 	connection += "sslmode=require"
 	Db, err = sql.Open(config.Config.SQLDriver, connection)
 	if err != nil {

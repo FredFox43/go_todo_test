@@ -3,7 +3,7 @@ package controllers
 import (
 	"log"
 	"net/http"
-	"todo_app_hroku/app/models"
+	"todo_app_heroku/app/models"
 )
 
 func top(w http.ResponseWriter, r *http.Request) {
